@@ -1,0 +1,59 @@
+# Vivado Project - Build/Generated Files
+*.jou
+*.log
+*.pb
+*.wdb
+*.wcfg
+*.xpe
+*.backup.*
+
+# Vivado Cache and Build Directories
+.Xil/
+*.cache/
+*.hw/
+*.sim/
+*.ip_user_files/
+*.runs/
+*.hbs/
+
+# Vivado Reports
+*.rpt
+*.drc
+*.rpx
+*.vdi
+*.vds
+
+# Bitstream and Hardware Files (optional - see note below)
+*.bit
+*.bin
+*.mcs
+*.ltx
+*.hwdef
+
+# OS Files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+usage_statistics_*.html
+usage_statistics_*.xml
+webtalk*.xml
+webtalk*.html
+
+# ISE Legacy Files
+ISEWrap.*
+*.ise_backup
+
+# Python
+__pycache__/
+*.pyc
+
+# Simulation Waveform Databases
+*.wdb
+*.wcfg
