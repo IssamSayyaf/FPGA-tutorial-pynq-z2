@@ -1,0 +1,47 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.680918",
+   "Default View_TopLeft":"-345,84",
+   "ExpandedHierarchyInLayout":"/axi_interconnect_0|/axi_interconnect_0/s00_couplers",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 5 -x 1650 -y 300 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 5 -x 1650 -y 330 -defaultsOSRD
+preplace port port-id_led -pg 1 -lvl 5 -x 1650 -y 187 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x 220 -y 360 -defaultsOSRD
+preplace inst axilite_slave_0 -pg 1 -lvl 3 -x 1250 -y 200 -defaultsOSRD
+preplace inst asym_blink_0 -pg 1 -lvl 4 -x 1530 -y 187 -defaultsOSRD -resize 153 103
+preplace inst c_counter_binary_0 -pg 1 -lvl 3 -x 1250 -y 60 -defaultsOSRD
+preplace inst axi_interconnect_0 -pg 1 -lvl 2 -x 690 -y 182 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 220 -y 170 -defaultsOSRD
+preplace inst axi_interconnect_0|s00_couplers -pg 1 -lvl 1 -x 790 -y 192 -defaultsOSRD
+preplace netloc axilite_slave_0_LED_ON_COUNT 1 3 1 N 190
+preplace netloc axilite_slave_0_LED_OFF_COUNT 1 3 1 1420 199n
+preplace netloc asym_blink_0_led 1 4 1 NJ 187
+preplace netloc c_counter_binary_0_Q 1 3 1 1430 60n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 4 20 60 430 62 1080 120 1420
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 3 30 70 450 52 1060J
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 1 420 210n
+preplace netloc processing_system7_0_DDR 1 1 4 410J 320 NJ 320 NJ 320 1630J
+preplace netloc processing_system7_0_FIXED_IO 1 1 4 NJ 330 NJ 330 NJ 330 NJ
+preplace netloc S00_AXI_1 1 1 1 440 152n
+preplace netloc axi_interconnect_0_M00_AXI 1 2 1 1070 152n
+preplace netloc axi_interconnect_0|axi_interconnect_0_ACLK_net 1 0 1 600 172n
+preplace netloc axi_interconnect_0|axi_interconnect_0_ARESETN_net 1 0 1 610 192n
+preplace netloc axi_interconnect_0|S00_ACLK_1 1 0 1 N 212
+preplace netloc axi_interconnect_0|S00_ARESETN_1 1 0 1 N 232
+preplace netloc axi_interconnect_0|axi_interconnect_0_to_s00_couplers 1 0 1 N 152
+preplace netloc axi_interconnect_0|s00_couplers_to_axi_interconnect_0 1 1 1 N 152
+preplace netloc axi_interconnect_0|s00_couplers|s00_couplers_to_s00_couplers 1 0 1 N 152
+levelinfo -pg 1 0 220 690 1250 1530 1650
+levelinfo -hier axi_interconnect_0 * 790 *
+levelinfo -hier axi_interconnect_0|s00_couplers * *
+pagesize -pg 1 -db -bbox -sgen 0 0 1760 470
+pagesize -hier axi_interconnect_0 -db -bbox -sgen 570 92 970 282
+pagesize -hier axi_interconnect_0|s00_couplers -db -bbox -sgen 710 122 870 262
+"
+}
+{
+   "da_clkrst_cnt":"4",
+   "da_ps7_cnt":"1"
+}

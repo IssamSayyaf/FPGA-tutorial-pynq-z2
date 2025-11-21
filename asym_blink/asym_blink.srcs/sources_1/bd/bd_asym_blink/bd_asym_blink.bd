@@ -11,8 +11,8 @@
     },
     "design_tree": {
       "processing_system7_0": "",
-      "c_counter_binary_0": "",
-      "asym_blink_0": ""
+      "asym_blink_0": "",
+      "c_counter_binary_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -106,7 +106,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100.000000"
+            "value": "250.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -181,7 +181,7 @@
             "value": "1"
           },
           "PCW_CLK0_FREQ": {
-            "value": "100000000"
+            "value": "250000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -268,7 +268,7 @@
             "value": "1"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "100"
+            "value": "250.0"
           },
           "PCW_FPGA_FCLK0_ENABLE": {
             "value": "1"
@@ -959,15 +959,6 @@
           }
         }
       },
-      "c_counter_binary_0": {
-        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
-        "xci_name": "bd_asym_blink_c_counter_binary_0_0",
-        "parameters": {
-          "Output_Width": {
-            "value": "21"
-          }
-        }
-      },
       "asym_blink_0": {
         "vlnv": "xilinx.com:module_ref:asym_blink:1.0",
         "xci_name": "bd_asym_blink_asym_blink_0_0",
@@ -986,7 +977,7 @@
                 "value_src": "default_prop"
               },
               "FREQ_HZ": {
-                "value": "100000000",
+                "value": "250000000",
                 "value_src": "user_prop"
               }
             }
@@ -1004,6 +995,15 @@
           },
           "led": {
             "direction": "O"
+          }
+        }
+      },
+      "c_counter_binary_0": {
+        "vlnv": "xilinx.com:ip:c_counter_binary:12.0",
+        "xci_name": "bd_asym_blink_c_counter_binary_0_1",
+        "parameters": {
+          "Output_Width": {
+            "value": "21"
           }
         }
       }
@@ -1027,20 +1027,20 @@
         "ports": [
           "processing_system7_0/FCLK_CLK0",
           "processing_system7_0/M_AXI_GP0_ACLK",
-          "c_counter_binary_0/CLK",
-          "asym_blink_0/clk"
-        ]
-      },
-      "c_counter_binary_0_Q": {
-        "ports": [
-          "c_counter_binary_0/Q",
-          "asym_blink_0/count"
+          "asym_blink_0/clk",
+          "c_counter_binary_0/CLK"
         ]
       },
       "asym_blink_0_led": {
         "ports": [
           "asym_blink_0/led",
           "led"
+        ]
+      },
+      "c_counter_binary_0_Q": {
+        "ports": [
+          "c_counter_binary_0/Q",
+          "asym_blink_0/count"
         ]
       }
     },

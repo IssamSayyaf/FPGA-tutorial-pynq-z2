@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (lin64) Build 2902540 Wed May 27 19:54:35 MDT 2020
---Date        : Sat Nov 15 00:10:47 2025
+--Date        : Sat Nov 15 17:50:03 2025
 --Host        : issam-XPS-9315 running 64-bit Ubuntu 24.04.3 LTS
 --Command     : generate_target bd_asym_blink.bd
 --Design      : bd_asym_blink
@@ -115,12 +115,6 @@ architecture STRUCTURE of bd_asym_blink is
     PS_PORB : inout STD_LOGIC
   );
   end component bd_asym_blink_processing_system7_0_0;
-  component bd_asym_blink_c_counter_binary_0_0 is
-  port (
-    CLK : in STD_LOGIC;
-    Q : out STD_LOGIC_VECTOR ( 20 downto 0 )
-  );
-  end component bd_asym_blink_c_counter_binary_0_0;
   component bd_asym_blink_asym_blink_0_0 is
   port (
     clk : in STD_LOGIC;
@@ -128,6 +122,12 @@ architecture STRUCTURE of bd_asym_blink is
     led : out STD_LOGIC
   );
   end component bd_asym_blink_asym_blink_0_0;
+  component bd_asym_blink_c_counter_binary_0_1 is
+  port (
+    CLK : in STD_LOGIC;
+    Q : out STD_LOGIC_VECTOR ( 20 downto 0 )
+  );
+  end component bd_asym_blink_c_counter_binary_0_1;
   signal asym_blink_0_led : STD_LOGIC;
   signal c_counter_binary_0_Q : STD_LOGIC_VECTOR ( 20 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
@@ -218,7 +218,7 @@ asym_blink_0: component bd_asym_blink_asym_blink_0_0
       count(20 downto 0) => c_counter_binary_0_Q(20 downto 0),
       led => asym_blink_0_led
     );
-c_counter_binary_0: component bd_asym_blink_c_counter_binary_0_0
+c_counter_binary_0: component bd_asym_blink_c_counter_binary_0_1
      port map (
       CLK => processing_system7_0_FCLK_CLK0,
       Q(20 downto 0) => c_counter_binary_0_Q(20 downto 0)

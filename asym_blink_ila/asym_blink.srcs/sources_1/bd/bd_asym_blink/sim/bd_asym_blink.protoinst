@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"bd_asym_blink": {
+			"proto_instances": {
+			}
+		}
+	}
+}
